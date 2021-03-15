@@ -50,8 +50,8 @@ function createCactus() {
         else if(cactusPosition >0 && cactusPosition <60 && position <60){
             //game over
             clearInterval(leftInterval);
-            document.body.innerHTML = '<h1 class= game-over>Fim de Jogo</h1>';
-
+            document.body.innerHTML = '<h1 class= game-over>Fim de Jogo</h1> <button class = game-over-button onclick= document.location.reload(true) ><img src="retryicon.png" </button> ';
+            
         }
         else {
             cactusPosition -= 10; //velocidade que o cactus vai se mover
